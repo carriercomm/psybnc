@@ -1,0 +1,15 @@
+CC	= gcc
+SRC	= src/
+CFLAGS  = -O
+LIBS	= -lm   -lresolv 
+INCLUDE = -I./src/ -I.
+OBJS	= src/psybnc.o src/match.o src/p_client.o src/p_crypt.o src/p_dcc.o src/p_hash.o src/p_idea.o src/p_inifunc.o src/p_link.o src/p_log.o src/p_memory.o src/p_network.o src/p_parse.o src/p_peer.o src/p_server.o src/p_socket.o src/p_string.o src/p_sysmsg.o src/p_userfile.o src/p_uchannel.o src/p_script.o src/p_topology.o src/p_intnet.o src/p_blowfish.o src/p_translate.o src/p_coredns.o src/snprintf.o 
+DEFINE	= -DHAVE_CONFIG -DIPV6  -DNOSYSTIME 
+TARGET	= psybnc
+
+all:	$(OBJS)
+	$(CC) -o $(TARGET) $(CFLAGS) $(OBJS) $(LIBS)
+	@strip $(TARGET)
+	@echo psyBNC2.3.2-7-Linux ready. Please read the README before you run psybnc.
+
+include ./targets.mak

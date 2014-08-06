@@ -1,0 +1,5 @@
+Thu Aug  7 01:50:20 :Listener created :0.0.0.0 port 31337
+Thu Aug  7 01:50:20 :Can't create listening sock on host * port 31337 (bind)
+Thu Aug  7 01:50:20 :psyBNC2.3.2-7-cBtITLdDMSNp started (PID :26569)
+Thu Aug  7 01:50:20 :Loading all Users..
+Thu Aug  7 01:50:20 :No Users found.

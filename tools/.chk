@@ -1,0 +1,4 @@
+tools/chkssl.c:48:28: fatal error: openssl/crypto.h: No such file or directory
+ #include <openssl/crypto.h>
+                            ^
+compilation terminated.
